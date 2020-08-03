@@ -1,0 +1,29 @@
+<view class="wrapper">
+  <view class="listContent">
+    <block wx:for="{{moviesList}}" wx:key="id">
+      <view class="listItem">
+        <view  class="left">
+          <image class="moviesImg" src="{{item.images.small}}"></image>
+        </view>
+        <view class="right">
+          <view class="moviesInfo">
+            <view class="moviesTitle">{{item.title}}</view>
+            <view class="moviesPlay">
+              <text class="moviesPlayText">评分人数：</text>
+              <text class="moviesPlayCount">{{item.collect_count}}</text>
+            </view>
+            <view class="moviesDirector">
+               <text class="moviesDirectorText">导演：</text>
+              <text class="moviesDirectorName">{{item.directors[0].name + ' ' + item.directors[0].name_en}}</text>
+            </view>
+            <view class="moviesRating">
+              <text class="moviesRatingText">评分：</text>
+              <text class="moviesRatingCount">{{item.rating.average}}</text>
+            </view>
+          </view>
+          <van-button type="warning" class="vant-button" size="mini" round bind:tap="enterDetail" data-moviesId="{{item.id}}">详情</van-button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

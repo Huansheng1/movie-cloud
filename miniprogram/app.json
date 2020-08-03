@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/movies-list/movies-list",
+    "pages/profile/profile",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#07c160",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2fc465",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/movies-list/movies-list",
+      "text": "电影列表",
+      "iconPath": "assets/img/dianying.png",
+      "selectedIconPath": "assets/img/dianying_1.png"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "我的信息",
+      "iconPath": "assets/img/wode.png",
+      "selectedIconPath": "assets/img/wode_1.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,64 @@
+.listContent{
+  display: flex;
+  flex-direction: column;
+}
+.listItem{
+  position: relative;
+  display: flex;
+  padding: 5rpx 0;
+}
+.left{
+  padding-left: 8px;
+}
+.moviesImg{
+  height: 240rpx;
+  width: 180rpx;
+}
+.right{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+.moviesInfo{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.moviesTitle{
+  font-size: 32rpx;
+  font-weight: 700;
+  line-height: 38rpx;
+}
+.moviesPlayCount{
+  padding-left: 12px;
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 48rpx;
+  color: coral;
+}
+.moviesDirectorName{
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.moviesPlayText,.moviesDirectorText,.moviesDirectorName,.moviesRatingText,.moviesRatingCount{
+  white-space: nowrap;
+  font-size: 28rpx;
+  line-height: 38rpx;
+}
+.moviesRatingCount{
+  padding-left: 12px;
+}
+.vant-button{
+  position: absolute;
+  top: 64px;
+  right: 12px;
+  flex:1;
+  min-width: 50px;
+  padding: 3rpx 6rpx;
+}
+.moviesRating{
+  flex: 1;
+}

@@ -1,0 +1,66 @@
+.hd{
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(6,128,67,0.6);
+}
+.left{
+  padding-right: 15px;
+}
+.movieImg{
+  height: 280rpx;
+  width: 188rpx;
+}
+.right{
+  flex: 1;
+  line-height: 58rpx;
+  font-size: 32rpx;
+}
+.title{
+  font-size: 48rpx;
+  font-weight: 700;
+}
+.averageCount{
+  font-size: 38rpx;
+  font-weight: 700;
+  color: chocolate;
+}
+.content{
+  padding: 10px 15px;
+}
+.contentText,.tagsText{
+  padding-bottom: 15px;
+  color: #818181;
+}
+.contentDetail{
+  padding-bottom: 15px;
+  font-size: 32rpx;
+  line-height: 58rpx;
+}
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+.movieTags{
+  margin: 3px;
+  display: inline-block;
+  /* 不让子元素高度拉伸 */
+  flex: 0 0 1;
+}
+.scoreContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid  rgba(6,128,67,0.6);
+}
+.upImg{
+  padding: 58rpx;
+}
+.scoreText{
+  min-height: 120rpx;
+  text-align: center;
+}
+.submitBtn{
+  background-color: rgba(6,128,67,0.6);
+}

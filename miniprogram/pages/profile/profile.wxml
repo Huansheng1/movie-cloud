@@ -1,0 +1,14 @@
+<view class="wrapper">
+  <view class="imgContent">
+  <van-image
+  round
+  width="280rpx"
+  height="280rpx"
+  src="{{userInfo.avatarUrl}}"
+  class="userImg"
+/>
+</view>
+<view class="btnWrapper">
+  <button open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" size="mini">{{btnText}}</button>
+</view>
+</view>

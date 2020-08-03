@@ -1,0 +1,46 @@
+<view class="wrapper">
+	<view class="hd">
+		<view class="left">
+			<image class="movieImg" src="{{movieDetail.images.large}}"></image>
+		</view>
+		<view class="right">
+			<view class="title">{{movieDetail.title}}</view>
+			<view class="average">
+				<text class="averageText">当前评分：</text>
+				<text class="averageCount">{{movieDetail.rating.average}}</text>
+			</view>
+			<view class="averagePerson">
+				<text class="averagePersonText">评分人数：</text>
+				<text class="averagePersonCount">{{movieDetail.ratings_count}}</text>
+			</view>
+			<view class="pubdate">
+				<text class="pubdateText">上映时间：</text>
+				<text class="pubdateTime">{{movieDetail.pubdate}}</text>
+			</view>
+			<view class="durations">
+				<text class="durationsText">影视时长：</text>
+				<text class="durationsTime">{{movieDetail.durations}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="bd">
+		<view class="content">
+			<view class="contentText">剧情简介</view>
+			<view class="contentDetail">{{movieDetail.summary}}</view>
+			<view class="tagsText">相应标签：</view>
+			<view class="tags">
+				<van-tag mark type="success" wx:for="{{movieDetail.tags}}" wx:key="item" class="movieTags">{{item}}</van-tag>
+			</view>
+		</view>
+		<view class="scoreContent">
+			<van-uploader multiple file-list="{{ fileList }}" accept="image" use-before-read bind:before-read="beforeRead" max-count="9" bind:after-read="afterRead" class="upImg" />
+			<van-rate value="{{ starValue }}" icon="like" bind:change="onChange" />
+			<view class="section">
+				<form bindsubmit="bindFormSubmit">
+					<textarea auto-focus value="五星好评不解释（默认）" name="scoreText" class="scoreText" />
+					<button bindFormSubmit="bindFormSubmit" form-type="submit" class="submitBtn">{{buttonText}}</button>
+        </form>
+      </view>
+		</view>
+	</view>
+</view>

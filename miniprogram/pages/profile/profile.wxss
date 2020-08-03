@@ -1,0 +1,15 @@
+.userImg{
+  position: relative;
+  left: 50%;
+  margin-left: -140rpx;
+}
+.imgContent{
+  position: relative;
+}
+.btnWrapper{
+  text-align: center;
+}
+.wrapper{
+  margin:50% auto;
+  transform: translateY(-50%);
+}
